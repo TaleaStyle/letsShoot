@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .image-text-container{
+        max-width: 600px;
+        padding: 20px;
+    }
+  .three-images {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .first-column {
+            flex: 1; /* Die erste Spalte passt sich der zweiten Spalte an */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .second-column {
+            flex: 1; /* Beide Spalten nehmen gleich viel Platz ein */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .first-column img {
+            flex: 2; /* Das Bild in der ersten Spalte nimmt doppelt so viel Platz ein */
+            object-fit: cover; /* Stellt sicher, dass das Bild den Platz richtig ausfüllt */
+            width: 100%; /* Volle Breite */
+        }
+
+        .second-column img {
+            flex: 1; /* Jedes Bild in der zweiten Spalte nimmt gleich viel Platz ein */
+          object-fit: cover; 
+            width: 100%;
+        }
+
+        /* .left-column, .right-column {
+            display: flex;
+        } */
+    </style>
+</style>
+<body>
+   <div class="image-text-container">
+    <h1>Hello world</h1>
+    <div class="three-images">
+        
+        <div class="first-column">
+           <img src="../assets/00-9.jpg" alt="">  
+       </div>
+        <div class="second-column">
+            <div class="left-column">
+                <img src="../assets/00-8.jpg" alt="">  
+             
+            </div>
+            <div class="right-column">
+         <img src="../assets/00-20.jpg" alt=""> 
+             
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
